@@ -30,7 +30,7 @@ Doplněk množství je automaticky zapnutý pro každou šablonu. Pro jeho deakt
 export default {
     data () {
         return {
-            msg: 'Administrace > VZHLED A OBSAH > Šablony > Prvky'
+            msg: 'Administrace > VZHLED A OBSAH > Editor > Editor kódu > Záhlaví (před koncovým tagem HEAD)'
         }
     }
 }

@@ -1,7 +1,7 @@
 ---
 home: true
-heroText: Dokumentace Shopteťák.cz
-tagline: Vítejte v dokumentační aplikaci doplňků Shopteťák.cz!
+heroText: Dokumentace Shopťák.cz
+tagline: Vítejte v dokumentační aplikaci doplňků Shopťák.cz!
 ---
 
 <div class="templates">
@@ -11,6 +11,7 @@ tagline: Vítejte v dokumentační aplikaci doplňků Shopteťák.cz!
   </h2>
   <div class="products">
     <Product-NewProduct
+        class=""
         v-for="item in recents" 
         :key="item.title" 
         :to="item.link"
@@ -18,12 +19,14 @@ tagline: Vítejte v dokumentační aplikaci doplňků Shopteťák.cz!
         :productImage="item.image"
         :productLink="item.link"
         :productDescription="item.description"
+        :badge="item.badge"
       />
     <Product-Template
         v-for="item in templates" 
         :key="item.title" 
         :to="item.link"
         :productTitle="item.title"
+        :badge="item.badge"
         :productImage="item.image"
         :productLink="item.link"
         :productDescription="item.description"
@@ -55,18 +58,41 @@ export default {
     return {
       recents: [
         {
+          title: 'Nefrit', 
+          link: '/nefrit/', 
+          image: 'https://ik.imagekit.io/alexborecky/shoptetak/Docs/template_g8iM1AplU0IZ.svg',
+          description: 'Trendy blank šablona pro malé množství produktů',
+          badge: 'Novinka 🙌',
+        },
+      ],
+      templates: [
+                {
+          title: 'Adamin', 
+          link: '/adamin/', 
+          image: 'https://ik.imagekit.io/alexborecky/shoptetak/Docs/template_g8iM1AplU0IZ.svg',
+          description: 'Blank šablona pro velké množství produktů',
+          badge: null,
+        },
+        {
           title: 'Celestin', 
           link: '/celestin/', 
           image: 'https://ik.imagekit.io/alexborecky/shoptetak/Docs/template_g8iM1AplU0IZ.svg',
           description: 'Blank šablona obohacená o kvalitní UX a interaktivní prvky',
+          badge: null
         },
-      ],
-      templates: [
         {
           title: 'Opal', 
           link: '/opal/', 
           image: 'https://ik.imagekit.io/alexborecky/shoptetak/Docs/template_g8iM1AplU0IZ.svg',
           description: 'Minimalistická Blank šablona zaměřující se na obsah',
+          badge: null
+        },
+        {
+          title: 'Rubin', 
+          link: '/rubin/', 
+          image: 'https://ik.imagekit.io/alexborecky/shoptetak/Docs/template_g8iM1AplU0IZ.svg',
+          description: 'Trendy šablona pro široký sortiment produktů',
+          badge: null
         },
       ],
       addons: [
@@ -111,14 +137,26 @@ export default {
   }
 }
 
+/* UNAVAILABLE PRODUCTS HERE 👇 */
+
+/* 
+.templates {
+  .products {
+    .preview:first-child {
+      pointer-events: none;
+      opacity: .4 !important;
+    }
+  }
+}  */
+
 /* .templates {
   .products {
     .preview:last-child {
       pointer-events: none;
-      opacity: .4;
+      opacity: .4 !important;
     }
   }
-} */
+}
 
 /* .no-badge {
   .test-badge {

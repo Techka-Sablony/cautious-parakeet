@@ -4,7 +4,7 @@
         <img :src="productImage" alt="">
         <div class="title">
             <h4>{{ productTitle }}</h4>
-            <TestBadge
+            <TestBadge class="blue"
                 :badge="badge"
             />
         </div>
@@ -16,7 +16,7 @@
     export default {
         data () {
             return {
-                badge: 'Nový'
+                // badge: 'Nový'
             }
         },
         props: [
@@ -24,6 +24,7 @@
             'productLink',
             'productTitle',
             'productDescription',
+            'badge',
         ]
     }
 </script>
@@ -42,6 +43,15 @@
     .title {
         display: flex;
         align-items: center;
+    }
+}
+
+.coming-soon {
+    &:first-child {
+        h4, p, img {
+            opacity: .24;
+        }
+        pointer-events: none;
     }
 }
 

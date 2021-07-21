@@ -1,6 +1,5 @@
 # Nastavení Carouselu
 
-
 Hlavním bannerem rozumíme ten, který se zobrazuje jako první při příchodu na náš e-shop a ten, který má největší rozměry.
 
 <iframe 

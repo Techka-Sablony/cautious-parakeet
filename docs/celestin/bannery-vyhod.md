@@ -36,14 +36,36 @@ Věnujme pozornost konkrétně třema atributům, které můžeme měnit, a to <
 Další dvě proměnné pak jsou `h3` a `p`. <b>Text</b> mezi nimi můžeme upravovat dle libosti.
 
 ## Přidání kódu
-Nyní známe atributy, které můžeme upravovat a nic nám tedy nebrání nahrít kód do administrace Shoptetu k nově přidanému banneru, a to do textové sekce Nastavení.
+Nyní známe atributy, které můžeme upravovat a nic nám tedy nebrání nahrát kód do administrace Shoptetu k nově přidanému banneru, a to do textové sekce Nastavení.
 
 ![An image](https://ik.imagekit.io/alexborecky/shoptetak/Doplnky/Celestin/html_MnGgQfUyW8Vv.png)
 
 Po přidání můžeme libovolně měnit text i obrázek v banneru. Posledním krokem je tak <b>ULOŽIT</b> změny a banner se vám začne postupně přidávat na hlavní stránku.
 
 :::warning
-Další výhody do svéh banneru přidáte opakováním stejného procesu.
+Další výhody do svého banneru přidáte opakováním stejného procesu.
+:::
+
+## Naše ikonky
+
+Níže naleznete odkazy na ikonky, které používáme v šabloně my. Adresa zůstává následující, pouze za poslední lomítko zadáte název ikony.
+
+`https://cdn.myshoptet.com/usr/shoptet.tomashlad.eu/user/documents/extras/celestin/img/(název ikony)`
+
+### Příklad
+
+Pokud chci ikonku s náklaďákem, bude odkaz vypadat následovně: 
+`https://cdn.myshoptet.com/usr/shoptet.tomashlad.eu/user/documents/extras/celestin/img/truck.svg`
+
+| Ikonka | Obrázek | Název |
+|:------|---------|:------|
+|Náklaďák|![An image](https://ik.imagekit.io/alexborecky/shoptetak/Docs/Screenshot_2021-03-04_at_14.54.49_2shLfZuhO2.png)|`truck.svg`|
+|Vrácení|![An image](https://ik.imagekit.io/alexborecky/shoptetak/Docs/Screenshot_2021-03-04_at_14.54.58_-qcGrV2AawKQy.png)|`refresh.svg`|
+|Telefon|![An image](https://ik.imagekit.io/alexborecky/shoptetak/Docs/Screenshot_2021-03-04_at_14.55.06_-xAtw8GRRu7oq.png)|`phone.svg`|
+|Ocenění|![An image](https://ik.imagekit.io/alexborecky/shoptetak/Docs/Screenshot_2021-03-04_at_14.55.12_rqJ1ZR_UQG.png)|`award.svg`|
+
+::: tip
+Ikony čerpáme z několika zdrojů, tyto konkrétní pochází z dílny [Feather Icons](https://feathericons.com). Návod na nahrání na url nebo Shoptet naleznete v sekci [Vygenerování URL obrázku](/opal/url-obrazku).
 :::
 
 <script>
@@ -55,3 +77,11 @@ export default {
     }
 }
 </script>
+
+<style lang="scss">
+tr {
+    img {
+        max-height: 120px;
+    }
+}
+</style>

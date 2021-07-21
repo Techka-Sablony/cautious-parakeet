@@ -1,5 +1,5 @@
 # Poměr stran fotografie
-Toto nastavení vám pmůže vypnout tlačítka Carouselu na mobilních zařízeních, konkrétně na telefonech a zařízeních s menším rozlišením.
+Toto nastavení umožní zapnutí dynamického řešení obrázku nahraných do Premium Carouselu a poskytne vám tak možnost nahrát obrázky, které mohou mít jiné rozměry než doporučené
 
 ## Administrace Shoptetu
 V první řadě budeme chtít přidat kód do patřičného místa v naší Shoptet administraci. Toto místo najdeme následovně:

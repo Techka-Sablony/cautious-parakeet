@@ -3,6 +3,9 @@
         <img :src="productImage" alt="">
         <div class="title">
             <h4>{{ productTitle }}</h4>
+            <TestBadge class="orange"
+                :badge="badge"
+            />
         </div>
         <p class="preview-description">{{ productDescription }}</p>
     </router-link>

@@ -1,6 +1,6 @@
 module.exports = {
     base: '/manualy/',
-    title: 'Dokumentace Shopteťák.cz',
+    title: 'Dokumentace Shopťák.cz',
     head: [
         ['link', { rel: 'icon', href: 'https://ik.imagekit.io/alexborecky/shoptetak/Favicons/favicon-32x32_ClOuZmOTMJ.png'}]
     ],
@@ -10,7 +10,7 @@ module.exports = {
     themeConfig: {
         searchPlaceholder: 'Search...',
         smoothScroll: true,
-        logo: 'https://ik.imagekit.io/alexborecky/shoptetak/logo_mxKFZoNmk67u.svg',
+        logo: 'https://ik.imagekit.io/alexborecky/shoptetak/logo_2Fvujvwpv.png',
         nav: [
             { 
                 text: 'Dashboard', 
@@ -19,8 +19,11 @@ module.exports = {
             { 
                 text: 'Šablony', 
                 items: [
+                    // { text: 'Nefrit', link: '/nefrit/'},
+                    { text: 'Adamin', link: '/adamin/'},
                     { text: 'Opal', link: '/opal/'},
                     { text: 'Celestin', link: '/celestin/'},
+                    { text: 'Rubin', link: '/rubin/'},
                 ]
             },
             { 
@@ -33,7 +36,14 @@ module.exports = {
                 text: 'Generátor kódu', 
                 link: '/generator/',
             },
-            { text: 'Shopteťák.cz', link: 'https://shoptetak.cz/' },
+            { text: 'Shopťák.cz', link: 'https://shoptak.cz/' },
+            {
+                text: '🇨🇿',
+                items: [
+                    {text: '🇨🇿 Čeština', link: '/'},
+                    {text: '🇬🇧 English', link: 'https://shoptak.cz/en/documentation', target: '_self'},
+                ]
+            }
         ],
         sidebar: {
             '/generator/': [
@@ -48,8 +58,62 @@ module.exports = {
                     title: 'Opal',
                     collapsable: false,
                     children: [
-                        'generator',
+                        'opal-bannery',
                     ]
+                },
+                {
+                    title: 'Nefrit',
+                    collapsable: false,
+                    children: [
+                        'nefrit',
+                        'nefrit-form',
+                        'nefrit-bannery'
+                    ]
+                }
+            ],
+            '/nefrit/': [
+                {
+                  title: 'Nefrit',
+                  collapsable: false,
+                  children: [
+                    '',
+                    'instalace',
+                    'rozsirene-nastaveni',
+                    'bannery',
+                    'produkt-na-hp',
+                    'platebni-metody',
+                    'zprava-paticky',
+                  ]
+                }
+            ],
+            '/rubin/': [
+                {
+                  title: 'Rubin',
+                  collapsable: false,
+                  children: [
+                    '',
+                    'instalace',
+                    'carousel',
+                    'bannery-vyhod',
+                    'vypis-variant',
+                  ]
+                }
+            ],
+            '/adamin/': [
+                {
+                  title: 'Adamin',
+                  collapsable: false,
+                  children: [
+                    '',
+                    'instalace',
+                    'administrace-shoptetu',
+                    'filtry',
+                    'bannery-vyhod.md',
+                    'produkty-na-radek',
+                    'skryti-pocitadel',
+                    'vlastni-blog',
+                    'oblibene-kategorie',
+                  ]
                 }
             ],
             '/opal/': [
@@ -58,13 +122,20 @@ module.exports = {
                   collapsable: false,
                   children: [
                     '',
-                    'velikost-obrazku',
-                    'nastaveni-banneru',
+                    'instalace',
                     'nastaveni-carouselu',
-                    'url-obrazku',
+                    'nastaveni-banneru',
+                    'obrazkove-bannery',
+                    'velikost-banneru',
+                    'pozicovani-textu',
+                    'velikost-obrazku',
+                    'galerie',
+                    'vypis-variant',
+                    'preskrtnuta-cena',
+                    'mnozstvi-zbozi',
                     'socialni-site',
                     'platebni-metody',
-                    'mnozstvi-zbozi',
+                    'url-obrazku',
                   ]
                 }
             ],
@@ -74,10 +145,12 @@ module.exports = {
                   collapsable: false,
                   children: [
                     '',
+                    'instalace',
+                    'light-mode',
                     'bannery-vyhod',
                     'dynamicke-bannery',
                     'hp-kategorie',
-                    'light-mode',
+                    'hp-novinky',
                     'winter-mode'
                   ]
                 }

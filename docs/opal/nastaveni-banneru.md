@@ -28,7 +28,18 @@ V první řadě se podívejme na kód, který budeme do sekce bannerů kopírova
 </div>
 ```
 
-Máme zde několik atributu, které bude potřeba nahradit, a to zejména ty, které reprezentují obrázek, nadpis, popisek, text a odkaz tlačítka. Tak tedy postupně:
+Máme zde několik atributů, které bude potřeba nahradit, a to zejména ty, které reprezentují obrázek, nadpis, popisek, text a odkaz tlačítka. Zároveň je potřeba ke každé pozici měnit `class`, neboť jejich názvy pak odpovídají jejich stylům.
+
+|Pozice     |`class`        |
+|-----------|:-------------:|
+|Top bannery|`custom-banner`|
+|Střední banner|`hp-middle-banner`|
+|Spodní bannery|`hp-bottom-banner`|
+
+:::warning
+Doporučujeme vyzkoušet náš [generátor kódu](/generator/) pro bannery! Stačí vyplnit obsahová pole a kód máte pžipravený pro použiti.
+:::
+
 
 ## Administrace Shoptetu
 
